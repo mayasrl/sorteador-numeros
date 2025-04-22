@@ -1,0 +1,51 @@
+footer, #informations {
+  margin-block: 5rem 2.5rem;
+  gap: 2.25rem;
+
+  & section {
+    display: flex;
+    align-items: flex-start;
+    gap: .5rem;
+  }
+
+  & div {
+    & h3 {
+      color: var(--content-brand);
+      font: var(--paragraph-md);
+      text-transform: unset;
+    }
+
+    & p {
+      color: var(--content-secondary);
+      font: var(--paragraph-sm);
+    }
+  }
+}
+footer { 
+  display: grid;
+}
+.footer-credit {
+  text-align: center;
+  margin-top: 2rem;   
+  font-size: 0.875rem;
+  color: var(--content-primary);
+}
+@media (950px <= width) {
+  footer {
+    display: none;
+  }
+
+  #informations {
+    margin-block: 0;
+    max-width: 20rem;
+
+    & section + section {
+      margin-top: 2.25rem;
+    }
+  }
+}
+@media (width >= 1200px) {
+  #informations {
+    max-width: 24.125rem;
+  }
+}

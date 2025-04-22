@@ -1,0 +1,55 @@
+img[src*="logo"] {
+  object-fit: cover;
+  display: block;
+  margin-block: 2.75rem 0;
+  /* removido margin-inline: auto para não centralizar */
+}
+header {
+  padding-block: 2.5rem;
+  gap: 3rem;
+}
+header > div:nth-child(1) {
+  gap: 0.5rem;
+}
+header h3 {
+  font: var(--overline);
+  background: var(--gradient-content);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+header h1 {
+  font: var(--dp-md);
+  color: var(--content-primary);
+  max-width: 20rem;
+}
+@media (min-width: 950px) {
+  img[src*="logo"] {
+    margin-block: 3rem 0;
+  }
+
+  header {
+    padding-block: 0;
+    gap: 2rem;
+    max-width: 26rem;
+    max-height: 22rem;
+  }
+
+  header h1 {
+    font-size: 3.25rem;
+    max-width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  img[src*="logo"] {
+    margin-block: 5rem 0;
+  }
+
+  header {
+    max-width: 34rem;
+  }
+
+  header h1 {
+    font: var(--dp-lg);
+  }
+}
