@@ -1,4 +1,4 @@
-# Sorteador de Números
+# Numbers
 
 Um **sorteador de números** interativo e responsivo, desenvolvido durante o curso **Fullstack** da Rocketseat. Permite definir um intervalo e a quantidade de números a serem sorteados, exibe cada resultado com animações e oferece opção de “sortear novamente”.
 
